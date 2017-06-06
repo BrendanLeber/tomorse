@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for WORD in "$@"
+do
+    echo "Generating $WORD.mp3 ringtone..."
+    echo "$WORD" | ./tomorse -s 20 > "$WORD.wav"
+    lame -h --preset phone --tt "$WORD" "$WORD.wav" "$WORD.mp3"
+    rm "$WORD.wav"
+done
