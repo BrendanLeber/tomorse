@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for WORD in "$@"
+do
+    echo "Generating $WORD.m4r ringtone..."
+    echo "$WORD" | ./tomorse > "$WORD.wav"
+    afconvert "$WORD.wav" -o "$WORD.m4r" -f m4af
+    rm "$WORD.wav"
+done

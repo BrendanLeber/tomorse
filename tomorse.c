@@ -41,9 +41,9 @@
 #define SECS_PER_MIN 60
 #define SAMPLE_RATE 44100
 #define CHANNELS 2
-#define DEFAULT_SPEED 13
-#define DEFAULT_CSPEED 20
-#define DEFAULT_PITCH 880
+#define DEFAULT_SPEED 30
+#define DEFAULT_CSPEED 30
+#define DEFAULT_PITCH 750
 
 #define MAX_AMPLITUDE 0.7
 #define SLOPE 0.005 /* seconds to reach full volume */
